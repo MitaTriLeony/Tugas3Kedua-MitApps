@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_bg">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="235dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvsilahkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/login_untuk_melanjutkan"
+            android:textAlignment="center"
+            android:textColor="#ABE3EA"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvsilahkan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="username"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="5dp"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColorHint="#15111C"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/pass"
+            android:drawableEnd="@drawable/show"
+            android:drawablePadding="5dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#15111C"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="246dp"
+            android:gravity="center_horizontal"
+            android:text="@string/signin" />
+
+        <TextView
+            android:id="@+id/tvCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="100dp"
+            android:text="@string/create_a_new_account"
+            android:textAlignment="center"
+            android:textColor="#15111C" />
+    </RelativeLayout>
+</LinearLayout>
